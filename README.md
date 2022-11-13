@@ -1,6 +1,10 @@
 # setting-ROSonWSL
 wslのubuntu20.04上にturtlebotのシミュレーション環境を構築する。
 環境変数の設定までを行う。
+インストール時に下記エラーが出る場合があるが無視して大丈夫
+```
+E: Unable to locate package open-ssh
+```
 
 具体例は下記ブログ参照
 
