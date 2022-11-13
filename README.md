@@ -11,7 +11,14 @@ E: Unable to locate package open-ssh
 https://tagebuchvonspargel.hatenablog.com/entry/2022/10/23/232641
 
 # how to install
-setting_ros_turtlebot.shをダウンロードし、
+ターミナル上で下記実行
+
+```
+git clone https://github.com/Spargel125/setting-ROSonWSL.git
+bash ./setting-ROSonWSL/setting_ros_turtlebot.sh
+```
+
+もしくは手動でsetting_ros_turtlebot.shをダウンロードし、
 ```
 bash ./setting_ros_turtlebot.sh
 ```
