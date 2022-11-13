@@ -32,7 +32,6 @@ mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src/
 git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 cd ~/catkin_ws && catkin_make
-source ~/catkin_ws/devel/setup.bash
 
 #setting system arguments
 echo 'export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '"'{print \$2}'):0.0" >> ~/.bashrc
@@ -41,9 +40,10 @@ echo export GAZEBO_IP=127.0.0.1 >> ~/.bashrc
 echo 'export ROS_MASTER_URI=http://$(hostname -I | tr -d [:blank:]):11311' >> ~/.bashrc
 echo 'export ROS_IP=$(hostname -I | tr -d [:blank:])' >> ~/.bashrc 
 
-export TURTLEBOT3_MODEL=burger
 
 #open-ssh install
-sudo apt install open-ssh
+# sudo apt install open-ssh
 sudo ssh-keygen -A
 sudo service ssh restart
+
+source ~/.bashrc
