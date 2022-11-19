@@ -25,7 +25,7 @@ bash ./setting_ros_turtlebot.sh
 を実行する。
 
 # インストールするもの
-* ROS-melodic
+* ROS-noetic
 * turtlebot3
 * open-ssh
 
